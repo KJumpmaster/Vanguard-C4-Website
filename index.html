@@ -1,28 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanguard C4</title>
-
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanguard C4 | Mission First</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
+  <header class="hero" id="top">
+    <div class="scanline"></div>
+    <nav class="nav">
+      <div class="brand">VANGUARD C4</div>
+      <div class="nav-links">
+        <a href="#mission-board">Mission Board</a>
+        <a href="#systems">Systems</a>
+        <a href="#watch">Watch</a>
+      </div>
+    </nav>
+    <section class="hero-core">
+      <div class="eyebrow">DECON COMMAND & CONTROL SYSTEM</div>
+      <h1>Bring them through their first mission.</h1>
+      <p class="hero-text">Vanguard C4 is not a companion app. It is an operational planning ecosystem for squadrons that already plan, brief, execute, and evaluate missions — now with the tools to visualize the entire process.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#mission-board">Enter Operations</a>
+        <a class="btn ghost" href="#watch">Watch Preview</a>
+      </div>
+    </section>
+  </header>
 
-    <h1>Vanguard C4</h1>
+  <main>
+    <section class="gap-section">
+      <div class="section-kicker">THE GAP</div>
+      <h2>Squadrons already operate this way.</h2>
+      <p>They prepare aircraft, assign missions, check in, evaluate strike packages, brief, execute, and conduct after-action review. Vanguard C4 gives that workflow a visual command center.</p>
+    </section>
 
-    <h2>Mission Planning. Squadron Coordination. Secure Synchronization.</h2>
+    <section class="mission-board" id="mission-board">
+      <div class="board-header">
+        <div>
+          <div class="section-kicker">MISSION LIFECYCLE</div>
+          <h2>Decagon command and control.</h2>
+        </div>
+        <div class="status-chip"><span></span> SYSTEM ONLINE</div>
+      </div>
 
-    <p>
-        The Vanguard C4 operational ecosystem is currently under active development.
-    </p>
+      <div class="phase-grid">
+        <button class="phase-card active" data-phase="1">
+          <span class="phase-num">01</span><strong>Prepare</strong><small>SkyPilot</small>
+        </button>
+        <button class="phase-card" data-phase="2">
+          <span class="phase-num">02</span><strong>Create Mission</strong><small>GI SCOUT</small>
+        </button>
+        <button class="phase-card" data-phase="3">
+          <span class="phase-num">03</span><strong>Mission Receipt</strong><small>KEYFORGE</small>
+        </button>
+        <button class="phase-card" data-phase="4">
+          <span class="phase-num">04</span><strong>Check In</strong><small>GI SCOUT</small>
+        </button>
+        <button class="phase-card" data-phase="5">
+          <span class="phase-num">05</span><strong>Evaluate Sortie Strike Package</strong><small>NORDEN II</small>
+        </button>
+        <button class="phase-card" data-phase="6">
+          <span class="phase-num">06</span><strong>Commander Approval</strong><small>GI SCOUT</small>
+        </button>
+        <button class="phase-card" data-phase="7">
+          <span class="phase-num">07</span><strong>Final Brief</strong><small>Sand Table</small>
+        </button>
+        <button class="phase-card" data-phase="8">
+          <span class="phase-num">08</span><strong>Execute</strong><small>Mission Launch</small>
+        </button>
+        <button class="phase-card" data-phase="9">
+          <span class="phase-num">09</span><strong>After-Action Review</strong><small>Evaluate</small>
+        </button>
+        <button class="phase-card" data-phase="10">
+          <span class="phase-num">10</span><strong>Awards</strong><small>Recognize Team</small>
+        </button>
+      </div>
 
-    <p>
-        The first public preview is coming soon.
-    </p>
+      <article class="phase-detail" id="phase-detail">
+        <div class="phase-visual">
+          <div class="radar-ring"></div>
+          <div class="radar-ring small"></div>
+          <div class="radar-sweep"></div>
+          <div class="blip b1"></div>
+          <div class="blip b2"></div>
+          <div class="blip b3"></div>
+        </div>
+        <div class="phase-copy">
+          <div class="phase-label">PHASE 01 / SKYPILOT</div>
+          <h3>Prepare the force.</h3>
+          <p>Build the hangar, track aircraft, and show command what is available before the mission begins.</p>
+          <ul>
+            <li>Aircraft inventory</li>
+            <li>Readiness picture</li>
+            <li>Mission preparation</li>
+          </ul>
+        </div>
+      </article>
+    </section>
 
-    <script src="js/main.js"></script>
+    <section class="systems" id="systems">
+      <div class="section-kicker">SYSTEMS</div>
+      <h2>Four systems. One mission.</h2>
+      <div class="system-grid">
+        <div class="system-card blue"><h3>SkyPilot</h3><p>Prepare aircraft and readiness before the operation starts.</p></div>
+        <div class="system-card green"><h3>GI SCOUT</h3><p>Create missions, manage squadron operations, brief, execute, and evaluate.</p></div>
+        <div class="system-card amber"><h3>KEYFORGE</h3><p>Securely synchronize mission packages between squadron members.</p></div>
+        <div class="system-card steel"><h3>NORDEN II</h3><p>Evaluate sortie strike packages, loadouts, effects, geometry, and attack planning.</p></div>
+      </div>
+    </section>
 
+    <section class="capabilities">
+      <div class="section-kicker">GI SCOUT COMMAND LAYER</div>
+      <h2>More than mission creation.</h2>
+      <div class="capability-list">
+        <span>SONAR command and control</span>
+        <span>Battle rhythm</span>
+        <span>Monthly calendar</span>
+        <span>Squadron readiness</span>
+        <span>Aircraft inventory</span>
+        <span>Skills assessment</span>
+        <span>After-action library</span>
+        <span>Intel briefs</span>
+      </div>
+    </section>
+
+    <section class="watch" id="watch">
+      <div class="section-kicker">COMING NEXT</div>
+      <h2>Short mission walkthroughs are inbound.</h2>
+      <p>Thirty-second previews will introduce the mission flow. Deeper walkthroughs will show how SkyPilot, GI SCOUT, KEYFORGE, and NORDEN II work together from assignment to after-action review.</p>
+      <a class="btn primary" href="#top">Return to Top</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>From mission assignment to after-action review — one operational ecosystem.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
